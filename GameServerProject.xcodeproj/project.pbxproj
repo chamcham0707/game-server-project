@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7353C6952A8C8C6500E48A72 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7353C6942A8C8C6500E48A72 /* main.cpp */; };
+		7353C6A12A8C932A00E48A72 /* libsfml-audio.2.6.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353C69C2A8C932A00E48A72 /* libsfml-audio.2.6.0.dylib */; };
+		7353C6A22A8C932A00E48A72 /* libsfml-graphics.2.6.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353C69D2A8C932A00E48A72 /* libsfml-graphics.2.6.0.dylib */; };
+		7353C6A32A8C932A00E48A72 /* libsfml-system.2.6.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353C69E2A8C932A00E48A72 /* libsfml-system.2.6.0.dylib */; };
+		7353C6A42A8C932A00E48A72 /* libsfml-window.2.6.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353C69F2A8C932A00E48A72 /* libsfml-window.2.6.0.dylib */; };
+		7353C6A52A8C932A00E48A72 /* libsfml-network.2.6.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353C6A02A8C932A00E48A72 /* libsfml-network.2.6.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,12 @@
 /* Begin PBXFileReference section */
 		7353C6912A8C8C6500E48A72 /* GameServerProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameServerProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		7353C6942A8C8C6500E48A72 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7353C69C2A8C932A00E48A72 /* libsfml-audio.2.6.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.6.0.dylib"; path = "../../../opt/homebrew/Cellar/sfml/2.6.0/lib/libsfml-audio.2.6.0.dylib"; sourceTree = "<group>"; };
+		7353C69D2A8C932A00E48A72 /* libsfml-graphics.2.6.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.6.0.dylib"; path = "../../../opt/homebrew/Cellar/sfml/2.6.0/lib/libsfml-graphics.2.6.0.dylib"; sourceTree = "<group>"; };
+		7353C69E2A8C932A00E48A72 /* libsfml-system.2.6.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.6.0.dylib"; path = "../../../opt/homebrew/Cellar/sfml/2.6.0/lib/libsfml-system.2.6.0.dylib"; sourceTree = "<group>"; };
+		7353C69F2A8C932A00E48A72 /* libsfml-window.2.6.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.6.0.dylib"; path = "../../../opt/homebrew/Cellar/sfml/2.6.0/lib/libsfml-window.2.6.0.dylib"; sourceTree = "<group>"; };
+		7353C6A02A8C932A00E48A72 /* libsfml-network.2.6.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.6.0.dylib"; path = "../../../opt/homebrew/Cellar/sfml/2.6.0/lib/libsfml-network.2.6.0.dylib"; sourceTree = "<group>"; };
+		7353C6B32A8CC50600E48A72 /* protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = protocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7353C6A12A8C932A00E48A72 /* libsfml-audio.2.6.0.dylib in Frameworks */,
+				7353C6A22A8C932A00E48A72 /* libsfml-graphics.2.6.0.dylib in Frameworks */,
+				7353C6A32A8C932A00E48A72 /* libsfml-system.2.6.0.dylib in Frameworks */,
+				7353C6A42A8C932A00E48A72 /* libsfml-window.2.6.0.dylib in Frameworks */,
+				7353C6A52A8C932A00E48A72 /* libsfml-network.2.6.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +57,10 @@
 		7353C6882A8C8C6500E48A72 = {
 			isa = PBXGroup;
 			children = (
-				7353C6932A8C8C6500E48A72 /* GameServerProject */,
+				7353C6B32A8CC50600E48A72 /* protocol.h */,
+				7353C6932A8C8C6500E48A72 /* GameServerProject_Client */,
 				7353C6922A8C8C6500E48A72 /* Products */,
+				7353C69B2A8C932A00E48A72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +72,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7353C6932A8C8C6500E48A72 /* GameServerProject */ = {
+		7353C6932A8C8C6500E48A72 /* GameServerProject_Client */ = {
 			isa = PBXGroup;
 			children = (
 				7353C6942A8C8C6500E48A72 /* main.cpp */,
 			);
-			path = GameServerProject;
+			path = GameServerProject_Client;
+			sourceTree = "<group>";
+		};
+		7353C69B2A8C932A00E48A72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7353C69C2A8C932A00E48A72 /* libsfml-audio.2.6.0.dylib */,
+				7353C69D2A8C932A00E48A72 /* libsfml-graphics.2.6.0.dylib */,
+				7353C6A02A8C932A00E48A72 /* libsfml-network.2.6.0.dylib */,
+				7353C69E2A8C932A00E48A72 /* libsfml-system.2.6.0.dylib */,
+				7353C69F2A8C932A00E48A72 /* libsfml-window.2.6.0.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +269,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/sfml/2.6.0/include;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/sfml/2.6.0/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +279,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/sfml/2.6.0/include;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/sfml/2.6.0/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
